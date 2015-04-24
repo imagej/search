@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>ImageJ Search</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<script type="text/javascript">
+	window.onload = function(){
+		document.getElementById('search_box').focus();
+	}
+</script>
+</head>
+<body>
+<!-- Generated via https://codepo8.github.io/css-fork-on-github-ribbon/ -->
+<span id="forkongithub"><a href="https://github.com/imagej/imagej-search">Fix me on GitHub</a></span>
+<h1 id="header">Search ImageJ resources</h1>
+<div id="search">
+<form action="search.php">
+<input type="text" id="search_box" name="q">
+<div id="search_buttons">
+<p id="web">
+<span class="search_button"><input type="submit" id="website" name="website" value="Website"></span>
+<span class="search_button"><input type="submit" id="wiki" name="wiki" value="Wiki"></span>
+<span class="search_button"><input type="submit" id="google" name="google" value="Google"></span>
+</p>
+<p id="code_issues">
+<span class="label">Code and issues</span>
+<span class="search_button"><input type="submit" id="github" name="github" value="GitHub"></span>
+<span class="search_button"><input type="submit" id="javadoc" name="javadoc" value="Javadoc"></span>
+<span class="search_button"><input type="submit" id="bugzilla" name="bugzilla" value="Fiji BugZilla"></span>
+<span class="search_button"><input type="submit" id="trac" name="trac" value="ImageJ Trac"></span>
+</p>
+<p id="lists">
+<span class="label">Lists</span>
+<span class="search_button"><input type="submit" id="imagej-users" name="imagej-list" value="ImageJ"></span>
+<span class="search_button"><input type="submit" id="imagej-devel" name="imagej-devel" value="imagej-devel"></span>
+<span class="search_button"><input type="submit" id="fiji-devel" name="fiji-devel" value="fiji-devel"></span>
+<span class="search_button"><input type="submit" id="scijava" name="scijava" value="scijava"></span>
+<span class="search_button"><input type="submit" id="scifio" name="scifio" value="scifio"></span>
+</p>
+</div>
+</form>
+</div>
+<div id="footer">Brought to you by <a href="http://imagej.net/">ImageJ</a>.</div>
+</body>
+</html>
