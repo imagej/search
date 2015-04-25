@@ -15,6 +15,9 @@ $fiji_devel = array_key_exists('fiji-devel', $_GET);
 $scijava = array_key_exists('scijava', $_GET);
 $scifio = array_key_exists('scifio', $_GET);
 
+$irc_imagejdev = array_key_exists('irc-imagejdev', $_GET);
+$irc_fiji_devel = array_key_exists('irc-fiji-devel', $_GET);
+
 $orgs = array(
 	"bigdataviewer",
 	"fiji",
@@ -67,6 +70,14 @@ else if ($scijava) {
 }
 else if ($scifio) {
 	$url = "https://www.google.com/?gws_rd=ssl#q=site:scif.io%2Fpipermail%2Fscifio+$q";
+}
+
+// irc
+else if ($irc_imagejdev) {
+	$url = "http://code.imagej.net/chatlogs/imagejdev?search=$q&format=html&columns=78&times=sparse&submit=search";
+}
+else if ($irc_fiji_devel) {
+	$url = "http://code.imagej.net/chatlogs/fiji-devel?search=$q&format=html&columns=78&times=sparse&submit=search";
 }
 
 // fall back to Google

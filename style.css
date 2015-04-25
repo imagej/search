@@ -66,6 +66,10 @@ body {
 	background-color: #dff;
 	padding: 10px;
 }
+#irc {
+	background-color: #ddf;
+	padding: 10px;
+}
 .label {
 	text-align: left;
 	position: absolute;
