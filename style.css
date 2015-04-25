@@ -46,10 +46,11 @@ body {
 }
 .search_button input {
 	background-color: #ffd;
+	border-radius: 10px;
 	color: #234;
 	font-size: 16px;
 	margin: 0;
-	padding: 7px;
+	padding: 10px;
 }
 #web {
 	padding-bottom: 10px;
@@ -66,8 +67,9 @@ body {
 	padding: 10px;
 }
 .label {
-	float: left;
-	padding-top: 5px;
+	text-align: left;
+	position: absolute;
+	padding: 10px 0 3px 10px;
 }
 
 a {
