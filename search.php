@@ -6,6 +6,7 @@ $wiki = array_key_exists('wiki', $_GET);
 
 $github = array_key_exists('github', $_GET);
 $javadoc = array_key_exists('javadoc', $_GET);
+$maven = array_key_exists('maven', $_GET);
 $bugzilla = array_key_exists('bugzilla', $_GET);
 $trac = array_key_exists('trac', $_GET);
 
@@ -47,6 +48,9 @@ else if ($github) {
 }
 else if ($javadoc) {
 	$url = "https://www.google.com/?gws_rd=ssl#q=site:javadoc.imagej.net+$q";
+}
+else if ($maven) {
+	$url = "http://maven.imagej.net/index.html#nexus-search;quick~$q";
 }
 else if ($bugzilla) {
 	$url = "http://fiji.sc/bugzilla/buglist.cgi?quicksearch=$q";
