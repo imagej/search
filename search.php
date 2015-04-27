@@ -15,6 +15,10 @@ $imagej_devel = array_key_exists('imagej-devel', $_GET);
 $fiji_devel = array_key_exists('fiji-devel', $_GET);
 $scijava = array_key_exists('scijava', $_GET);
 $scifio = array_key_exists('scifio', $_GET);
+$openspim = array_key_exists('openspim', $_GET);
+$micromanager = array_key_exists('micromanager', $_GET);
+$slim_curve = array_key_exists('slim-curve', $_GET);
+$ome_lists = array_key_exists('ome-lists', $_GET);
 
 $irc_imagejdev = array_key_exists('irc-imagejdev', $_GET);
 $irc_fiji_devel = array_key_exists('irc-fiji-devel', $_GET);
@@ -74,6 +78,18 @@ else if ($scijava) {
 }
 else if ($scifio) {
 	$url = "https://www.google.com/?gws_rd=ssl#q=site:scif.io%2Fpipermail%2Fscifio+$q";
+}
+else if ($openspim) {
+	$url = "https://www.google.com/?gws_rd=ssl#q=site:openspim.org%2Fpipermail+$q";
+}
+else if ($micromanager) {
+	$url = "http://micro-manager.3463995.n2.nabble.com/template/NamlServlet.jtp?macro=search_page&node=3463995&query=$q";
+}
+else if ($slim_curve) {
+	$url = "https://www.google.com/?gws_rd=ssl#q=site:loci.wisc.edu%2Fpipermail%2Fslim-curve+$q";
+}
+else if ($ome_lists) {
+	$url = "https://www.google.com/?gws_rd=ssl#q=site:lists.openmicroscopy.org.uk%2Fpipermail+$q";
 }
 
 // irc
