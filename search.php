@@ -24,6 +24,8 @@ $irc_imagejdev = array_key_exists('irc-imagejdev', $_GET);
 $irc_fiji_devel = array_key_exists('irc-fiji-devel', $_GET);
 
 $orgs = array(
+	"CellProfiler",
+	"Icy-imaging",
 	"bigdataviewer",
 	"fiji",
 	"imagej",
