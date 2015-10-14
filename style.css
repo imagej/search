@@ -34,39 +34,48 @@ body {
 	padding-top: 15px;
 	text-align: center;
 }
-.search_button {
+#search_buttons table {
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+#search_buttons table tr:first-child td {
+	font-size: 0.5em;
+	text-decoration: underline;
+}
+#search_buttons table td {
+	text-align: center;
+	padding: 10px;
+}
+#search_buttons table td:first-child {
+	padding: 10px 0 3px 10px;
+	text-align: right;
+}
+#search_buttons input {
+	margin: 2px;
+	width: 10em;
+}
+.big_button {
 	padding: 8px;
 }
-.search_button input {
-	background-color: #ffd;
+.big_button input {
+	background-color: mediumspringgreen;
 	border-radius: 10px;
 	color: #234;
-	font-size: 16px;
+	font-size: 24px;
 	margin: 0;
 	padding: 10px;
 }
-#web {
-	padding-bottom: 10px;
+#search_buttons tr:nth-child(2) td {
+	background-color: gainsboro;
 }
-#web .search_button input {
-	font-size: 24px;
+#search_buttons tr:nth-child(3) td {
+	background-color: mistyrose;
 }
-#code_issues {
-	background-color: #fee;
-	padding: 10px;
+#search_buttons tr:nth-child(4) td {
+	background-color: lightgoldenrodyellow;
 }
-#lists {
-	background-color: #eff;
-	padding: 10px;
-}
-#irc {
-	background-color: #eef;
-	padding: 10px;
-}
-.label {
-	text-align: left;
-	position: absolute;
-	padding: 10px 0 3px 10px;
+#search_buttons tr:nth-child(5) td {
+	background-color: paleturquoise;
 }
 
 a {

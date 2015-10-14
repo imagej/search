@@ -17,39 +17,62 @@ window.onload = function(){
 			<form action="search.php">
 				<input type="text" id="search_box" name="q">
 				<div id="search_buttons">
-					<div id="web">
-						<span class="search_button"><input type="submit" id="website" name="website" value="Website"></span>
-						<span class="search_button"><input type="submit" id="wiki" name="wiki" value="Wiki"></span>
-						<span class="search_button"><input type="submit" id="google" name="google" value="Google"></span>
-					</div>
-					<div class="label"><a href="http://imagej.net/Source_code">Code</a> and
-						<a href="http://imagej.net/Project_management#Issue_tracking">issues</a></div>
-					<div id="code_issues">
-						<span class="search_button"><input type="submit" id="github" name="github" value="GitHub"></span>
-						<span class="search_button"><input type="submit" id="javadoc" name="javadoc" value="Javadoc"></span>
-						<span class="search_button"><input type="submit" id="maven" name="maven" value="Maven"></span>
-						<span class="search_button"><input type="submit" id="bugzilla" name="bugzilla" value="Fiji BugZilla"></span>
-						<span class="search_button"><input type="submit" id="trac" name="trac" value="ImageJ Trac"></span>
-					</div>
-					<div class="label"><a href="http://imagej.net/Mailing_Lists">Lists</a></div>
-					<div id="lists">
-						<span class="search_button"><input type="submit" id="imagej-list" name="imagej-list" value="ImageJ"></span>
-						<span class="search_button"><input type="submit" id="imagej-devel" name="imagej-devel" value="imagej-devel"></span>
-						<span class="search_button"><input type="submit" id="fiji-devel" name="fiji-devel" value="fiji-devel"></span>
-						<span class="search_button"><input type="submit" id="scijava" name="scijava" value="scijava"></span>
-						<span class="search_button"><input type="submit" id="scifio" name="scifio" value="scifio"></span>
-						<br><br>
-						<span class="search_button"><input type="submit" id="openspim" name="openspim" value="OpenSPIM"></span>
-						<span class="search_button"><input type="submit" id="micromanager" name="micromanager" value="Micro-Manager"></span>
-						<span class="search_button"><input type="submit" id="slim-curve" name="slim-curve" value="SLIM-Curve"></span>
-						<span class="search_button"><input type="submit" id="ome-lists" name="ome-lists" value="OME"></span>
-					</div>
-					<div class="label"><a href="http://imagej.net/IRC">IRC</a></div>
-					<div id="irc">
-						<span class="search_button"><input type="submit" id="irc-imagejdev" name="irc-imagejdev" value="#imagejdev"></span>
-						<span class="search_button"><input type="submit" id="irc-fiji-devel" name="irc-fiji-devel" value="#fiji-devel"></span>
-					</div>
+					<table>
+						<tr>
+							<td>Category</td>
+							<td>Main</td>
+							<td>Secondary</td>
+							<td>Archived</td>
+						</tr>
+						<tr id="web">
+							<td><a href="http://imagej.net/">Web site</a></td>
+							<td><span class="big_button"><input type="submit" id="website" name="website" value="Website"></span></td>
+							<td>
+								<span class="search_link"><input type="submit" id="wiki" name="wiki" value="Wiki"></span>
+								<br><span class="search_link"><input type="submit" id="google" name="google" value="Google"></span>
+							</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr id="code_issues">
+							<td><a href="http://imagej.net/Code">Code</a> + <a href="http://imagej.net/Issues">Issues</a></td>
+							<td><span class="big_button"><input type="submit" id="github" name="github" value="GitHub"></span></td>
+							<td>
+								<span class="search_link"><input type="submit" id="javadoc" name="javadoc" value="Javadoc"></span>
+								<br><span class="search_link"><input type="submit" id="maven" name="maven" value="Maven"></span>
+							</td>
+							<td>
+								<span class="search_link"><input type="submit" id="bugzilla" name="bugzilla" value="Fiji BugZilla"></span>
+								<br><span class="search_link"><input type="submit" id="trac" name="trac" value="ImageJ Trac"></span>
+							</td>
+						</tr>
+						<tr id="lists">
+							<td><a href="http://imagej.net/Mailing_Lists">Lists</a></td>
+							<td><span class="big_button"><input type="submit" id="imagej-list" name="imagej-list" value="ImageJ"></span></td>
+							<td>
+								<span class="search_link"><input type="submit" id="scijava" name="scijava" value="scijava"></span>
+								<br><span class="search_link"><input type="submit" id="openspim" name="openspim" value="OpenSPIM"></span>
+								<br><span class="search_link"><input type="submit" id="micromanager" name="micromanager" value="Micro-Manager"></span>
+								<br><span class="search_link"><input type="submit" id="slim-curve" name="slim-curve" value="SLIM-Curve"></span>
+								<br><span class="search_link"><input type="submit" id="ome-lists" name="ome-lists" value="OME"></span>
+							</td>
+							<td>
+								<span class="search_link"><input type="submit" id="imagej-devel" name="imagej-devel" value="imagej-devel"></span>
+								<br><span class="search_link"><input type="submit" id="fiji-devel" name="fiji-devel" value="fiji-devel"></span>
+								<br><span class="search_link"><input type="submit" id="scifio" name="scifio" value="scifio"></span>
+							</td>
+						</tr>
+						<tr id="irc">
+							<td><a href="http://imagej.net/IRC">IRC</a></td>
+							<td>&nbsp;</td>
+							<td>
+								<span class="search_link"><input type="submit" id="irc-imagejdev" name="irc-imagejdev" value="#imagejdev"></span>
+								<br><span class="search_link"><input type="submit" id="irc-fiji-devel" name="irc-fiji-devel" value="#fiji-devel"></span>
+							</td>
+							<td>&nbsp;</td>
+						</tr>
+					</table>
 				</div>
+
 			</form>
 		</div>
 		<div id="footer">Brought to you by <a href="http://imagej.net/">ImageJ</a>.</div>
