@@ -69,6 +69,11 @@ else if ($trac) {
 	$url = "http://trac.imagej.net/search?q=$q&noquickjump=1&ticket=on";
 }
 
+// forum
+else if ($forum) {
+	$url = "http://forum.imagej.net/search?q=$q";
+}
+
 // lists
 else if ($imagej_list) {
 	$url = "http://imagej.1557.x6.nabble.com/template/NamlServlet.jtp?macro=search_page&node=3681987&query=$q";
