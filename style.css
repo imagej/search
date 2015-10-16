@@ -39,7 +39,7 @@ body {
 	margin: 0 auto;
 }
 #search_buttons table tr:first-child td {
-	font-size: 0.5em;
+	font-size: 0.85em;
 	text-decoration: underline;
 }
 #search_buttons table td {
