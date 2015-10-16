@@ -11,7 +11,6 @@ $bugzilla = array_key_exists('bugzilla', $_GET);
 $trac = array_key_exists('trac', $_GET);
 
 $forum = array_key_exists('forum', $_GET);
-
 $imagej_list = array_key_exists('imagej-list', $_GET);
 $imagej_devel = array_key_exists('imagej-devel', $_GET);
 $fiji_devel = array_key_exists('fiji-devel', $_GET);
@@ -71,12 +70,10 @@ else if ($trac) {
 	$url = "http://trac.imagej.net/search?q=$q&noquickjump=1&ticket=on";
 }
 
-// forum
+// forum and lists
 else if ($forum) {
 	$url = "http://forum.imagej.net/search?q=$q";
 }
-
-// lists
 else if ($imagej_list) {
 	$url = "http://imagej.1557.x6.nabble.com/template/NamlServlet.jtp?macro=search_page&node=3681987&query=$q";
 }
