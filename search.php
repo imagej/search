@@ -10,6 +10,8 @@ $maven = array_key_exists('maven', $_GET);
 $bugzilla = array_key_exists('bugzilla', $_GET);
 $trac = array_key_exists('trac', $_GET);
 
+$forum = array_key_exists('forum', $_GET);
+
 $imagej_list = array_key_exists('imagej-list', $_GET);
 $imagej_devel = array_key_exists('imagej-devel', $_GET);
 $fiji_devel = array_key_exists('fiji-devel', $_GET);
@@ -67,6 +69,11 @@ else if ($bugzilla) {
 }
 else if ($trac) {
 	$url = "http://trac.imagej.net/search?q=$q&noquickjump=1&ticket=on";
+}
+
+// forum
+else if ($forum) {
+	$url = "http://forum.imagej.net/search?q=$q";
 }
 
 // lists
