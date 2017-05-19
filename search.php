@@ -36,6 +36,7 @@ $orgs = array(
 	"ome",
 	"openmicroscopy",
 	"openspim",
+	"saalfeldlab",
 	"scifio",
 	"scijava",
 	"slim-curve",
