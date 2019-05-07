@@ -3,6 +3,7 @@
 	<head>
 		<title>ImageJ Search</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="icon" type="image/png" href="favicon.png">
 		<script type="text/javascript">
 window.onload = function(){
@@ -27,50 +28,50 @@ window.onload = function(){
 						</tr>
 						<tr id="web">
 							<td><a href="https://imagej.net/">Web site</a></td>
-							<td><span class="big_button"><input type="submit" id="website" name="website" value="Website"></span></td>
+							<td><span><input class="btn btn-primary btn-lg" type="submit" id="website" name="website" value="Website"></span></td>
 							<td>
-								<span class="search_link"><input type="submit" id="wiki" name="wiki" value="Wiki"></span>
-								<br><span class="search_link"><input type="submit" id="google" name="google" value="Google"></span>
+								<span class="search_link"><input class="btn btn-secondary btn-sm" type="submit" id="wiki" name="wiki" value="Wiki"></span>
+								<br><span class="search_link"><input class="btn btn-secondary btn-sm" type="submit" id="google" name="google" value="Google"></span>
 							</td>
 							<td>&nbsp;</td>
 						</tr>
 						<tr id="code_issues">
 							<td><a href="https://imagej.net/Code">Code</a> + <a href="https://imagej.net/Issues">Issues</a></td>
-							<td><span class="big_button"><input type="submit" id="github" name="github" value="GitHub"></span></td>
+							<td><span><input class="btn btn-primary btn-lg" type="submit" id="github" name="github" value="GitHub"></span></td>
 							<td>
-								<span class="search_link"><input type="submit" id="javadoc" name="javadoc" value="Javadoc"></span>
-								<br><span class="search_link"><input type="submit" id="maven" name="maven" value="Maven"></span>
+								<span class="search_link"><input class="btn btn-secondary btn-sm" type="submit" id="javadoc" name="javadoc" value="Javadoc"></span>
+								<br><span class="search_link"><input class="btn btn-secondary btn-sm" type="submit" id="maven" name="maven" value="Maven"></span>
 							</td>
 							<td>
-								<span class="search_link"><input type="submit" id="bugzilla" name="bugzilla" value="Fiji BugZilla"></span>
-								<br><span class="search_link"><input type="submit" id="trac" name="trac" value="ImageJ Trac"></span>
+								<span class="search_link"><input class="btn btn-secondary btn-sm" type="submit" id="bugzilla" name="bugzilla" value="Fiji BugZilla"></span>
+								<br><span class="search_link"><input class="btn btn-secondary btn-sm" type="submit" id="trac" name="trac" value="ImageJ Trac"></span>
 							</td>
 						</tr>
 						<tr id="forum_lists">
 							<td><a href="https://forum.image.sc/">Forum</a> + <a href="https://imagej.net/Mailing_Lists">Lists</a></td>
 							<td>
-								<span class="big_button"><input type="submit" id="forum" name="forum" value="Forum"></span>
-								<br><span class="big_button"><input type="submit" id="imagej-list" name="imagej-list" value="ImageJ"></span>
+								<span><input class="btn btn-primary btn-lg" type="submit" id="forum" name="forum" value="Forum"></span>
+								<br><span><input class="btn btn-primary btn-lg" type="submit" id="imagej-list" name="imagej-list" value="ImageJ"></span>
 							</td>
 							<td>
-								<br><span class="search_link"><input type="submit" id="scijava" name="scijava" value="SciJava"></span>
-								<br><span class="search_link"><input type="submit" id="micromanager" name="micromanager" value="Micro-Manager"></span>
-								<br><span class="search_link"><input type="submit" id="ome-lists" name="ome-lists" value="OME"></span>
+								<br><span class="search_link"><input class="btn btn-secondary btn-sm" type="submit" id="scijava" name="scijava" value="SciJava"></span>
+								<br><span class="search_link"><input class="btn btn-secondary btn-sm" type="submit" id="micromanager" name="micromanager" value="Micro-Manager"></span>
+								<br><span class="search_link"><input class="btn btn-secondary btn-sm" type="submit" id="ome-lists" name="ome-lists" value="OME"></span>
 							</td>
 							<td>
-								<span class="search_link"><input type="submit" id="imagej-devel" name="imagej-devel" value="imagej-devel"></span>
-								<br><span class="search_link"><input type="submit" id="fiji-devel" name="fiji-devel" value="fiji-devel"></span>
-								<br><span class="search_link"><input type="submit" id="scifio" name="scifio" value="SCIFIO"></span>
-								<br><span class="search_link"><input type="submit" id="openspim" name="openspim" value="OpenSPIM"></span>
-								<br><span class="search_link"><input type="submit" id="slim-curve" name="slim-curve" value="SLIM-Curve"></span>
+								<span class="search_link"><input class="btn btn-secondary btn-sm" type="submit" id="imagej-devel" name="imagej-devel" value="imagej-devel"></span>
+								<br><span class="search_link"><input class="btn btn-secondary btn-sm" type="submit" id="fiji-devel" name="fiji-devel" value="fiji-devel"></span>
+								<br><span class="search_link"><input class="btn btn-secondary btn-sm" type="submit" id="scifio" name="scifio" value="SCIFIO"></span>
+								<br><span class="search_link"><input class="btn btn-secondary btn-sm" type="submit" id="openspim" name="openspim" value="OpenSPIM"></span>
+								<br><span class="search_link"><input class="btn btn-secondary btn-sm" type="submit" id="slim-curve" name="slim-curve" value="SLIM-Curve"></span>
 							</td>
 						</tr>
 						<tr id="chat">
 							<td><a href="https://imagej.net/Chat">Chat</a></td>
 							<td>&nbsp;</td>
 							<td>
-								<span class="search_link"><input type="submit" id="irc-imagejdev" name="irc-imagejdev" value="#imagejdev"></span>
-								<br><span class="search_link"><input type="submit" id="irc-fiji-devel" name="irc-fiji-devel" value="#fiji-devel"></span>
+								<span class="search_link"><input class="btn btn-secondary btn-sm" type="submit" id="irc-imagejdev" name="irc-imagejdev" value="#imagejdev"></span>
+								<br><span class="search_link"><input class="btn btn-secondary btn-sm" type="submit" id="irc-fiji-devel" name="irc-fiji-devel" value="#fiji-devel"></span>
 							</td>
 							<td>&nbsp;</td>
 						</tr>

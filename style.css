@@ -54,17 +54,6 @@ body {
 	margin: 2px;
 	width: 10em;
 }
-.big_button {
-	padding: 8px;
-}
-.big_button input {
-	background-color: mediumspringgreen;
-	border-radius: 10px;
-	color: #234;
-	font-size: 24px;
-	margin: 0;
-	padding: 10px;
-}
 #search_buttons tr:nth-child(2) td {
 	background-color: gainsboro;
 }
