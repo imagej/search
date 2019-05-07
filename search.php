@@ -73,7 +73,7 @@ else if ($trac) {
 
 // forum and lists
 else if ($forum) {
-	$url = "http://forum.imagej.net/search?q=$q";
+	$url = "https://forum.image.sc/search?q=$q";
 }
 else if ($imagej_list) {
 	$url = "http://imagej.1557.x6.nabble.com/template/NamlServlet.jtp?macro=search_page&node=3681987&query=$q";
