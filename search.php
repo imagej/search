@@ -65,7 +65,7 @@ else if ($maven) {
 	$url = "https://maven.scijava.org/index.html#nexus-search;quick~$q";
 }
 else if ($bugzilla) {
-	$url = "http://fiji.sc/bugzilla/buglist.cgi?quicksearch=$q";
+	$url = "https://www.google.com/?gws_rd=ssl#q=site:fiji.sc%2Fbug+$q";
 }
 else if ($trac) {
 	$url = "http://trac.imagej.net/search?q=$q&noquickjump=1&ticket=on";
