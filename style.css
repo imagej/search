@@ -38,17 +38,8 @@ body {
 	margin: 2px;
 	width: 10em;
 }
-#search_buttons tr:nth-child(2) td {
-	background-color: gainsboro;
-}
-#search_buttons tr:nth-child(3) td {
-	background-color: mistyrose;
-}
-#search_buttons tr:nth-child(4) td {
-	background-color: lightgoldenrodyellow;
-}
-#search_buttons tr:nth-child(5) td {
-	background-color: paleturquoise;
+#search_buttons tr:nth-child(even) td {
+	background-color: cornsilk;
 }
 
 a {
