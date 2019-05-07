@@ -62,7 +62,7 @@ else if ($javadoc) {
 	$url = "https://www.google.com/?gws_rd=ssl#q=site:javadoc.imagej.net+$q";
 }
 else if ($maven) {
-	$url = "http://maven.imagej.net/index.html#nexus-search;quick~$q";
+	$url = "https://maven.scijava.org/index.html#nexus-search;quick~$q";
 }
 else if ($bugzilla) {
 	$url = "http://fiji.sc/bugzilla/buglist.cgi?quicksearch=$q";
