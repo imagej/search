@@ -49,7 +49,7 @@ if ($website) {
 	$url = "https://www.google.com/?gws_rd=ssl#q=site:imagej.net+$q";
 }
 else if ($wiki) {
-	$url = "http://imagej.net/index.php?title=Special%3ASearch&search=$q";
+	$url = "https://imagej.net/index.php?title=Special%3ASearch&search=$q";
 }
 
 // code and issues
@@ -68,7 +68,7 @@ else if ($bugzilla) {
 	$url = "https://www.google.com/?gws_rd=ssl#q=site:fiji.sc%2Fbug+$q";
 }
 else if ($trac) {
-	$url = "http://trac.imagej.net/search?q=$q&noquickjump=1&ticket=on";
+	$url = "https://trac.imagej.net/search?q=$q&noquickjump=1&ticket=on";
 }
 
 // forum and lists
@@ -105,10 +105,10 @@ else if ($ome_lists) {
 
 // irc
 else if ($irc_imagejdev) {
-	$url = "http://code.imagej.net/chatlogs/imagejdev?search=$q&format=html&columns=78&times=sparse&submit=search";
+	$url = "https://code.imagej.net/chatlogs/imagejdev?search=$q&format=html&columns=78&times=sparse&submit=search";
 }
 else if ($irc_fiji_devel) {
-	$url = "http://code.imagej.net/chatlogs/fiji-devel?search=$q&format=html&columns=78&times=sparse&submit=search";
+	$url = "https://code.imagej.net/chatlogs/fiji-devel?search=$q&format=html&columns=78&times=sparse&submit=search";
 }
 
 // fall back to Google
