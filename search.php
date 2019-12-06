@@ -66,7 +66,7 @@ else if ($bugzilla) {
 	$url = "https://www.google.com/?gws_rd=ssl#q=site:fiji.sc%2Fbug+$q";
 }
 else if ($trac) {
-	$url = "https://trac.imagej.net/search?q=$q&noquickjump=1&ticket=on";
+	$url = "https://www.google.com/?gws_rd=ssl#q=site:imagej.github.io%2Ftickets+$q";
 }
 
 // forum and lists
