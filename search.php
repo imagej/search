@@ -18,7 +18,7 @@ $scijava = array_key_exists('scijava', $_GET);
 $scifio = array_key_exists('scifio', $_GET);
 $openspim = array_key_exists('openspim', $_GET);
 $micromanager = array_key_exists('micromanager', $_GET);
-$slim_curve = array_key_exists('slim-curve', $_GET);
+$flimlib = array_key_exists('flimlib', $_GET);
 $ome_lists = array_key_exists('ome-lists', $_GET);
 
 $irc_imagejdev = array_key_exists('irc-imagejdev', $_GET);
@@ -39,7 +39,7 @@ $orgs = array(
 	"saalfeldlab",
 	"scifio",
 	"scijava",
-	"slim-curve",
+	"flimlib",
 	"trakem2",
 	"uw-loci"
 );
@@ -96,7 +96,7 @@ else if ($openspim) {
 else if ($micromanager) {
 	$url = "http://micro-manager.3463995.n2.nabble.com/template/NamlServlet.jtp?macro=search_page&node=3463995&query=$q";
 }
-else if ($slim_curve) {
+else if ($flimlib) {
 	$url = "https://www.google.com/?gws_rd=ssl#q=site:loci.wisc.edu%2Fpipermail%2Fslim-curve+$q";
 }
 else if ($ome_lists) {
