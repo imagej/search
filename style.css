@@ -22,24 +22,30 @@ body {
 	border-collapse: collapse;
 	margin: 0 auto;
 }
-#search_buttons table tr:first-child td {
-	font-size: 0.85em;
-	text-decoration: underline;
-}
 #search_buttons table td {
 	text-align: center;
 	padding: 10px;
-}
-#search_buttons table td:first-child {
-	padding: 10px 0 3px 10px;
-	text-align: right;
+	vertical-align: top;
 }
 #search_buttons input {
 	margin: 2px;
 	width: 10em;
 }
 #search_buttons tr:nth-child(even) td {
-	background-color: cornsilk;
+	background-color: blanchedalmond;
+}
+
+#archived input {
+	background: gainsboro;
+	color: black;
+	padding: 2px;
+	font-size: 0.6em;
+	margin: 0;
+}
+
+#archived td {
+	background: none;
+	margin: 0;
 }
 
 a {
