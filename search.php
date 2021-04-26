@@ -52,7 +52,7 @@ else if ($wiki) {
 
 // code and issues
 else if ($github) {
-	$url = "https://github.com/search?q=$q+is%3Aopen";
+	$url = "https://github.com/search?q=$q";
 	foreach ($orgs as $org) { $url .= "+user%3A$org"; }
 	$url .= '&ref=simplesearch&type=Code';
 }
