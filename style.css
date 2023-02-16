@@ -5,6 +5,10 @@ body {
 	background: white;
 }
 
+.btn {
+	cursor: pointer;
+}
+
 #search {
 	padding: 50px 135px 25px 135px;
 	font-size: large;
